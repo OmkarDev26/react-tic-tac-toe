@@ -62,7 +62,7 @@ export default function Board() {
   }
 
   return (
-    <>
+    <div>
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={sqaures[0]} onSquareClick={() => handleClick(0)} />
@@ -79,6 +79,6 @@ export default function Board() {
         <Square value={sqaures[7]} onSquareClick={() => handleClick(7)} />
         <Square value={sqaures[8]} onSquareClick={() => handleClick(8)} />
       </div>
-    </>
+    </div>
   );
 }
